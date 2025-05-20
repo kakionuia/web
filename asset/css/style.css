@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+
+}
+body {
+  background-color: #000;
+} 
+
+header {
+    background-color: #FCEB94;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}    
+
+.nav a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.search-bar {
+    display: flex;
+    gap: 1rem;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #FEF3E2;
+    border-radius: 5px;
+    /* width: 200px; */
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #F3C623;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.company {
+  display: flex;
+  align-items: center; /* ini yang bikin sejajar vertikal */
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;         /* Ukuran proporsional */
+  height: auto;
+  object-fit: contain; /* Biar tidak terdistorsi */
+}
+
+.corp {
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0;           /* Pastikan tidak ada margin default */
+}
+
+.wrap {
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.landing-page {
+    font-size: 1.75em;
+}
+
+.landing-img {
+    z-index: 1;
+}
+
+.bulat {
+    z-index: -1;
+    min-width: 400px;
+    min-height: 400px;
+    background-color: #FCB454;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    border-radius: 300px 100px 300px 300px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25),  0 50px 0;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 30px 0 30px 0;
+    box-shadow: 0px 15px 15px rgba(255, 255, 255, 0.25);
+}
+
+.info-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #ffe76f;
+    border-radius: 30px;
+    width: 10vw;
+}
+
+.landing-page h1 {
+    color: #FF9B17;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.text-info {
+    font-size: 0.5em;
+    color: #000;
+    font-weight: 500;
+}
+
+.info-icon {
+    width: 10%;
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 30px 0;
+  /* margin-top: 50px; */
+  font-size: 0.9em;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #f3c623;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 30px 20px;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .info-group {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .landing-page {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .corp {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .search-input,
+  .search-button {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  .bulat {
+    display: none; /* bisa juga kamu kecilkan, tapi di HP kadang ganggu */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+    .container, .footer-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  .wrap {
+    gap: 30px;
+  }
+
+  .info-icon {
+    width: 20px;
+  }
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.products-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+.products-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #FF9B17;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #fef3e2;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+  color: #f3c623;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.products-section {
+  padding: 60px 20px;
+  margin-top: 80px; /* Tambahan jarak dari atas */
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+.contact-section {
+  background-color: #f3c623;
+  padding: 50px 20px;
+  text-align: center;
+  color: #000;
+  /* border-radius: 20px 20px 0 0; */
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 15px 30px;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 12px rgba(37, 211, 102, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+}
